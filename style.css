@@ -1,0 +1,462 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F0F5F9;
+  font-family: "Ubuntu", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: 0;
+  outline: none;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}
+.acceuil {
+  background-color: #C9D6DF; /* Couleur de fond pour la section de description */
+}
+
+.principal {
+  background-color: #e1e4e6; /* Couleur de fond pour la section de description */
+}
+.prodz{
+  background-color: #C9D6DF;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Assure que l'en-tête reste au-dessus du contenu */
+}
+
+
+.navbar {
+  height: 90px;
+  background-color: #788189;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.navbar .logo i {
+  color: #0aa5ff;
+  font-size: 22px;
+}
+
+.navbar .logo a {
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  margin-left: 12px;
+  display: flex;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.menu-links {
+  display: flex;
+  gap: 24px;
+  border-right: 1px solid #ffffff;
+  padding-inline: 24px;
+}
+
+.menu-links a {
+  font-weight: 500;
+  color: #ffffff;
+  padding: 8px 16px;
+}
+.menu-links a:hover {
+  color: #C9D6DF;
+}
+.log-in {
+  font-weight: 500;
+  padding: 12px 22px;
+  background-color: transparent;
+  color: #ffffff;
+  border-radius: 10px;
+  border: 2px solid #ffffff;
+  transition: 0.2s;
+}
+.log-in:hover {
+  background-color: #C9D6DF;
+  color: white;
+}
+
+.menu-btn {
+  font-size: 32px;
+  color: white;
+  display: none;
+  cursor: pointer;
+}
+
+
+footer{
+  width: 100%;
+  background-color: #788189;
+  color: white;
+}
+.footer-wrapper {
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 1.75rem clamp(1.5rem, 3vw, 7rem); /* Ajuster le padding pour réduire la hauteur */
+}
+
+.nsprds{
+  color: #52616B;
+}
+
+.footer-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.5rem; /* Réduire l'espacement entre les éléments */
+}
+
+.footer-subscribe {
+    max-width: clamp(20rem, 33vw, 33rem);
+}
+
+.footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(1.5rem, 2vw, 3.5rem); /* Réduire l'espacement entre les éléments */
+
+}
+
+.footer-copyright {
+    font-size: 0.75rem; /* Diminuer la taille de la police */
+    margin-top: 2rem; /* Ajuster la marge supérieure */
+}
+
+  h1 {
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    text-align: center;
+    position: relative;
+  }
+  
+  h1::before,
+  h1::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.3s ease-out;
+  }
+  h1:hover::before {
+    color: #c0c0c0;
+    transform: translate(9px, -9px);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+  }
+  h1:hover::after {
+    color: #C9D6DF;
+    transform: translate(18px, -18px);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+  }
+
+
+  .animsvg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+  }
+  
+  .description {
+    padding: 80px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .ddla {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid #C9D6DF; /* couleur de la bordure */
+    color: #FFFFFF; /* couleur du texte */
+    background-color: #52616B; /* couleur de fond */
+    border-radius: 100px; /* arrondi des coins */
+    transition: background-color 0.3s, color 0.3s; /* animation lors du survol */
+    margin: 20px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Ajouter une ombre */
+  }
+  
+  .ddla:hover {
+    background-color: #C9D6DF; /* couleur de fond au survol */
+    border-color: #52616B; /* couleur de la bordure au survol */
+    color: white; /* couleur du texte au survol */
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); /* Ajouter une ombre */
+  }
+
+
+.poem{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+
+
+  .choose{
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    color: #52616B;
+    text-align: center;
+    position: relative;
+    margin-top: 0%;
+    padding-top : 30px;
+  }
+
+.media-container {
+  display: flex;
+  justify-content: center; /* Center the container within the available space */
+  margin: 30px; /* Add some margin to the media container */
+}
+
+.video-player {
+  flex: 2; /* Grow the video player to take more space */
+}
+
+.audio-players {
+  flex: 1; /* Audio players take less space */
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Space between individual audio elements */
+margin-left: 40px;
+}
+
+
+figure {
+  margin: 0;
+}
+
+audio {
+  height: 20px;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px; /* Ajoute un espace entre les lecteurs audio */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+figcaption {
+  margin-top: 5px;
+  font-size: 16px;
+  color: #52616B;
+  text-align: left;
+}
+
+.dowload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.dowload h2{
+  font-size: 25px;
+}
+#downloadButton{
+  margin: 60px;
+  background-color: #52616B;
+  color: #FFFFFF;
+  font-weight: bold;
+  border-radius: 30px;
+padding: 10px;
+box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); /* Ajouter une ombre */
+}
+.audio-options{
+  font-size: 15px;
+  color: #52616B;
+}
+
+.video-options{
+  font-size: 15px;
+  color: #52616B;
+}
+
+.ch{
+  color: #52616B;
+}
+
+.image-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+padding: 70px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; /* Espacement entre les images */
+}
+
+.grid img {
+  max-width: 100%; /* Assure que les images ne dépassent pas la largeur de leur conteneur */
+  max-height: 200px; /* Définis la taille maximale en hauteur pour les images */
+  width: auto; /* Permet aux images de conserver leur proportion d'origine */
+  height: auto; /* Permet aux images de conserver leur proportion d'origine */
+}
+
+
+.text {
+  flex: 1;
+  padding: 10px;
+  background-color: #F0F5F9; /* Couleur de fond du texte */
+  border-radius: 10px; /* Arrondir les coins */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ajouter une ombre */
+  margin-left: 20px;
+}
+
+.text h2 {
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 5px;
+  color: #52616B;
+  text-align: center;
+  margin-bottom: 20px; /* Ajuster l'espacement en bas */
+}
+
+.text p {
+  font-size: 16px;
+  color: #52616B;
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 0; /* Supprimer l'espacement en bas */
+}
+
+
+@media (max-width: 992px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .media-container {
+    flex-direction: column;
+  }
+
+  .video-player,
+  .audio-players {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .video-player {
+    max-width: 70%; /* Réduire davantage la largeur de la vidéo */
+  }
+}
+
+@media (max-width: 768px) {
+  .description {
+    padding: 40px;
+    flex-direction: column;
+  }
+
+  .text {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .image-grid {
+    flex-direction: column;
+    padding: 40px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-links {
+    border-right: none;
+    padding-inline: 0;
+  }
+
+  .log-in {
+    padding: 10px 20px;
+  }
+
+  .video-player {
+    max-width: 60%; /* Réduire encore plus la largeur de la vidéo */
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .navbar .logo a {
+    font-size: 20px;
+  }
+
+  .ddla {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  .footer-wrapper {
+    padding: 1.5rem;
+  }
+
+  .choose {
+    font-size: 25px;
+    letter-spacing: 3px;
+  }
+
+  h1 {
+    font-size: 28px;
+    letter-spacing: 5px;
+  }
+
+  .footer-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video-player {
+    max-width: 100%; /* La vidéo prend toute la largeur disponible */
+  }
+}

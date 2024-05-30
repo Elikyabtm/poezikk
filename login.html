@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <!-- Utilisez src pour inclure le fichier JavaScript -->
+    <script src="login.js"></script>
+</head>
+
+<body>
+    <section class="container">
+        <div class="image-section">
+            <div class="image-wrapper">
+                <img src="" alt="">
+            </div>
+
+            <div class="content-container">
+                <h1 class="section-heading">Connectez vous pour sauvegarder vos <span>Poéziks.</span></h1>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <div class="form-wrapper">
+                <div class="logo-container">
+                    <a href="index.html">
+                        <h1 data-text="Poézik">Poézik</h1></a>
+                </div>
+
+                
+                <form id="login-form">
+                    <div class="input-container">
+                        <div class="form-group">
+                            <label for="email">Adresse mail</label>
+                            <input type="email" id="email" name="email" autocomplete="off" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Mot de passe</label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                    </div>
+
+                    <div class="remember-forgot">
+                        <div class="remember-me">
+                            <input type="checkbox" value="remember-me" id="remember-me">
+                            <label for="remember-me">Se souvenir de moi</label>
+                        </div>
+
+                        <a href="">Mot de passe oublié ?</a>
+                    </div>
+
+                    <button type="submit" class="login-btn">Se connecter</button>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+  </body>
+</html>

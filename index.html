@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Poézik</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/npm/@ffmpeg/ffmpeg@0.10.0/dist/ffmpeg.mijs"></script>
+        <script src="script.js" defer></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMpFkyKpQO9WCU3/B6xJf6Q/e1sPSfW46UdRRxY" crossorigin="anonymous">
+    </head>
+<body>
+    
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fas fa-music"></i>
+                <a href="index.html">
+                    <h1 data-text="Poézik">Poézik</h1>
+                </a>
+            </div>
+            <div class="menu">
+                <div class="menu-links">
+                    <a href="#">Mes favoris</a>
+                </div>
+                <a href="login.html"><button class="log-in">Se connecter</button></a>
+            </div>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="acceuil">
+        <div class="animsvg">
+         <img src="images/logo.png" class="animate__animated animate__jackInTheBox" width="200px">           
+        </div>
+
+        <section class="description">
+            Bienvenue sur Poézik. <br> Notre site vous propose une expérience émotionnelle entre musique et textes classiques de la poésie… <br>Créez votre meilleur mashup entre les deux et télécharger votre Poézik <br>pour partager vos émotions avec vos proches ou pour vous accompagner dans votre journée.
+        </section>
+    </section>
+
+    <section class="principal">
+        <h2 class="choose">Nos poèmes</h2>
+        <section class="poem">
+            <a href="Vidéos/DDL.mp4" class="ddla" data-video-src="Vidéos/DDL.mp4">Victor Hugo - <i>Demain dès l'aube</i></a>
+            <a href="Vidéos/Vogue.mp4" class="ddla" data-video-src="Vidéos/Vogue.mp4">Nadia Ben Slima - <i>Vogue</i></a>
+            <a href="Vidéos/Corbeau.mp4" class="ddla" data-video-src="Vidéos/Corbeau.mp4">Edgar Allan Poe - <i>Le Corbeau</i></a>
+        </section>
+
+        <section class="media-container">
+            <video id="videoPlayer" width="900" controls>
+                <source src="Vidéos/DDL.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="audio-players">
+                
+
+    <div> 
+       <div class="nsprds"> <h2>Nos prods</h2></div>
+        
+        <figure>
+            <figcaption>The End</figcaption>
+            <audio id="audioPlayer1" controls>
+                <source src="Prods/The End.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+</figure>
+<figure>
+    <figcaption>Mélancolia</figcaption>
+            <audio id="audioPlayer2" controls>
+                <source src="Prods/Mélancolia.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </figure>
+        <figure>   
+            <figcaption>Lost</figcaption>     
+            <audio id="audioPlayer3" controls>
+                <source src="Prods/Lost.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </figure>
+        <figure>
+            <figcaption>Look Around</figcaption>
+            <audio id="audioPlayer4" controls>
+                <source src="Prods/Look Around.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+         </figure>
+         <figure>
+            <figcaption>Horizon</figcaption>
+            <audio id="audioPlayer5" controls>
+                <source src="Prods/Horizon.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+          </figure>
+          <figure>
+            <figcaption>Frustrated</figcaption>
+            <audio id="audioPlayer6" controls>
+                <source src="Prods/Frustrated.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+</figure>
+<figure>
+    <figcaption>Anxious</figcaption>
+            <audio id="audioPlayer7" controls>
+                <source src="Prods/Anxious Instagram.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </figure>
+        <figure>
+            <figcaption>Angel</figcaption>
+            <audio id="audioPlayer8" controls>
+                <source src="Prods/Angel.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </figure>          
+            </div>
+        </div>
+        </section>
+
+        <div class="dowload">
+            <div class="ch"><h2>Choisissez un poème :</h2></div>
+         <div class="video-options">
+            <label>
+                <input type="radio" name="video" value="Vidéos/DDL.mp4">
+                Victor Hugo - <i>Demain dès l'aube</i>
+            </label>
+            <label>
+                <input type="radio" name="video" value="Vidéos/Vogue.mp4">
+                Nadia Ben Slima - <i>Vogue</i>
+            </label>
+            <label>
+                <input type="radio" name="video" value="Vidéos/Corbeau.mp4">
+                Edgar Allan Poe - <i>Le Corbeau</i>
+            </label>
+        </div>
+
+        <div class="ch"><h2>Choisissez un audio :</h2></div>
+        <div class="audio-options">
+            <label>
+                <input type="radio" name="audio" value="Prods/The End.mp3">
+                The End
+            </label>
+            <label>
+                <input type="radio" name="audio" value="Prods/Melancolia.mp3">
+                Mélancolia
+            </label>
+            <label>
+                <input type="radio" name="audio" value="Prods/Lost.mp3">
+                Lost
+            </label>
+            <label>
+                <input type="radio" name="audio" value="Prods/Look_Around.mp3">
+                Look Around
+            </label>
+            <label>
+                <input type="radio" name="audio" value="Prods/Horizon.mp3">
+                Horizon
+            </label>
+            <label>
+                <input type="radio" name="audio" value="Prods/Frustrated.mp3">
+                Frustrated
+            </label>
+            <label>
+                <input type="radio" name="audio" value="Prods/Anxious Instagram.mp3">
+                Anxious Instagram
+            </label>
+            <label>
+                <input type="radio" name="audio" value="Prods/Angel.mp3">
+                Angel
+            </label>
+        </div>
+
+        <button id="downloadButton">Télécharger la combinaison</button>
+
+    </section>  
+    <section class="prodz">
+        <div class="image-grid">
+            <div class="grid">
+                <a href="https://www.instagram.com/p/CZXBFHKIJX4/" target="_blank">   <img src="images/Look around.png" alt="Image 2"></a>
+                <a href="https://www.instagram.com/p/Cx1SL0gtchY/" target="_blank"><img src="images/ANXIOUS.png" alt="Image 3"></a>
+                <a href="https://www.instagram.com/p/CZG0ZHuIRrh/" target="_blank"> <img src="images/Trust me.png" alt="Image 1"></a>                
+                <a href="https://www.instagram.com/p/ChcASvSqio4/" target="_blank"><img src="images/Not right.png" alt="Image 4"></a>
+                <a href="https://www.instagram.com/p/CiiqzIRDhvb/" target="_blank"><img src="images/Lost.png" alt="Image 5"></a>
+                <a href="https://www.instagram.com/p/Ckanl8Cj2b8/" target="_blank"><img src="images/Frustrated.png" alt="Image 6"></a>
+                <a href="https://www.instagram.com/p/C05AOLeNmZo/" target="_blank"> <img src="images/The End.png" alt="Image 7"></a>
+                <a href="https://www.instagram.com/p/CccvwW5D_7v/" target="_blank"><img src="images/Missing you.png" alt="Image 8"></a>
+                <a href="https://www.instagram.com/p/CctN7phDTzE/" target="_blank"> <img src="images/Horizon.png" alt="Image 9"></a>
+            </div>
+            <div class="text">
+                <h2>Plus de musique</h2>
+                <p>Cliquer sur la cover de votre choix et profiter de l'expérience musicale</p>
+            </div>
+</section> 
+    </main>
+
+    <footer>
+        <div class="footer-wrapper">
+            <div class="footer-section">
+                <div class="footer-subscribe">
+                    <h2>Abonnez-vous à notre newsletter pour plus de Poézik</h2>
+                    <div class="input-box">
+                        <input type="email" placeholder="Adresse mail" aria-label="Email Address">
+                        
+                        <a href="#">➔</a>
+                        
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer-copyright">
+                <p>©2024 Poézik</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
